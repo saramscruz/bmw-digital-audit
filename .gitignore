@@ -1,0 +1,31 @@
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Query result exports (add manually; too large/sensitive for git)
+outputs/query-results/*.csv
+outputs/query-results/*.json
+
+# Dashboard screenshots (add manually via LFS or direct upload)
+dashboard/*.png
+dashboard/*.jpg
