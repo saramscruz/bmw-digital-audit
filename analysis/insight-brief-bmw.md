@@ -44,6 +44,53 @@ Three analyses, in priority order:
 
 ---
 
+## Three Testable Product Hypotheses
+
+These are product decisions, not analytics requests. Each one is
+actionable without GA4 access, testable within a single sprint,
+and falsifiable with a pre-defined success metric.
+
+---
+
+**Hypothesis 1 — Reducing the lead form from 7 to 4 mandatory fields will increase form completion rate**
+
+The "Pedido de Proposta" form on bmw.pt currently requires 7 mandatory fields before submission: Series, Model, Particular/Empresa selector, Nome, Apelido, Telefone, and Concessionário. Industry research consistently shows form conversion drops with each field beyond 3–4.
+
+Proposed change: make Concessionário optional (dealer selection can happen post-submission) and remove the Particular/Empresa selector from the mandatory path (default to Particular, offer toggle).
+
+Success metric: lead form submissions per configurator completion, segmented by device. The mobile CPC gap found in this analysis (4.28% vs desktop 5.06%) predicts that mobile users are disproportionately affected by form length — the success metric should be measured on mobile CPC traffic specifically.
+
+Test mechanism: A/B test on form field count. Control: 7 fields. Variant: 4 fields.
+Cost: one sprint. No configurator changes required.
+
+---
+
+**Hypothesis 2 — Adding a "Save configuration" entry point at Step 6 of the iX3 configurator will increase return visit rate**
+
+The data shows conversion grows 6.3x from first to sixth session. The mechanism that enables return visits — saving a configuration — is currently gated behind a BMW ID login wall and only available at the final summary screen (Step 14 on the iX3). Most users who will eventually convert never reach Step 14 on their first visit.
+
+Proposed change: surface a lightweight "Save and continue later" prompt at Step 6 (after the core product decisions — engine, version, paint, wheels, interior, trim — are made but before the upsell layers). Require only an email address, not a full BMW ID registration. Send a single re-engagement email at 48 hours and 5 days if the configuration is not completed.
+
+Success metric: return visit rate for users who save at Step 6 vs users who reach Step 6 without saving. Secondary metric: lead submission rate for return visitors who used the save feature vs those who returned via direct/organic.
+
+Test mechanism: Add save prompt at Step 6 for 50% of iX3 configurator sessions. Measure over 30 days — long enough to capture the 129-hour average conversion window.
+Cost: one sprint for the prompt UI; email automation via existing CRM.
+
+---
+
+**Hypothesis 3 — A dedicated mobile landing page for iX3 paid search traffic will close the CPC conversion gap**
+
+The device/channel analysis shows mobile CPC converts at 4.28% vs desktop CPC at 5.06% — a gap that does not exist on referral traffic (mobile referral outperforms desktop at 7.53% vs 7.01%). The funnel observation confirmed the iX3 configurator itself is functionally identical on mobile and desktop. The friction is therefore upstream — in the paid search landing experience before the configurator is reached.
+
+Proposed change: create a dedicated mobile landing page for iX3 paid search campaigns. The page should load the iX3 configurator directly at Step 1 (bypassing the model range and model detail pages), display the two variant options (iX3 40 from €64,500 / iX3 50 xDrive from €72,900) with range and price as the primary decision frame, and surface the "Pedido de Proposta" CTA without requiring configurator completion.
+
+Success metric: CPC conversion rate on mobile, measured as lead submissions per paid mobile session. Baseline: 4.28%. Target: parity with desktop CPC (5.06%) within 60 days.
+
+Test mechanism: Run iX3 paid mobile traffic 50/50 between existing landing page and new dedicated page. Measure for 30 days minimum.
+Cost: one sprint for the landing page. No changes to the configurator or existing campaigns required.
+
+---
+
 ## What Changes With Real Data
 
 The numbers above demonstrate method, not finding. With BMW's GA4 export, each inference becomes a measurement: the exact configurator step where mobile exits, the actual session count for BEV converters, the paid mobile gap in basis points, the true re-engagement window for configurator abandoners.
