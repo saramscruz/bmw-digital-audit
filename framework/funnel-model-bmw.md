@@ -195,6 +195,53 @@ The device-level performance gap observed in Query C (CPC: 4.28% mobile vs 5.06%
 
 ---
 
+## iX3 vs i4 — Configurator Comparison
+
+**Observed:** June 2026, bmw.pt, desktop
+
+The iX3 configurator differs from the i4 in four measurable ways.
+
+### Steps: 14 vs 12
+
+The iX3 has 14 configurator steps versus 12 for the i4. The three additional steps are:
+
+- **Volantes** (Steering wheel)
+- **Design de Interiores** (Interior design)
+- **Assistentes de Condução** (Driving assistants)
+
+All three are EV-specific or technology-focused decisions requiring greater consideration than equivalent ICE choices. Each additional step is an additional exit opportunity.
+
+### Price: €64,500 vs €57,950
+
+Base price first appears at Step 2 in both configurators. The iX3 entry price is €64,500 versus €57,950 for the i4 — a €6,550 difference at first price exposure. A higher price point at this moment increases the consideration window, makes the user more likely to pause the session, and makes the re-engagement mechanism (save configuration, return visit) more critical to conversion.
+
+### Reserve CTA: absent on iX3
+
+The iX3 summary page does not offer a Reserve option. The i4 offers Reserve — a 4-step online checkout with payment data entry. The iX3 offers only Pedido de Proposta and Test Drive, both dealer-mediated.
+
+The highest-intent digital conversion action in the funnel is absent for BMW's highest-demand model in Portugal. The iX3 recorded +1,050% web search growth and BREAKOUT status on YouTube in June 2026. The model generating the most organic interest has no path to online reservation.
+
+### Motorizações step: high-stakes EV choice
+
+The iX3 Motorizações step (Step 1) presents two variants:
+
+| Variant | Base price | Range | Power | 0–100 km/h |
+|---------|-----------|-------|-------|------------|
+| BMW iX3 40 | €64,500 | 637 km | 235 kW | 5.9 s |
+| BMW iX3 50 xDrive | €72,900 | 805 km | 345 kW | 4.9 s |
+
+Price delta at first decision point: €8,400. Unlike the i4 Motorizações step — which separates fuel types (Elétrico / Gasolina / Gasóleo) — the iX3 step is an EV-specific performance and range trade-off at a premium price point. The 168 km range difference (637 vs 805 km) is the primary differentiator for buyers with range anxiety concerns, which remain a primary EV purchase barrier. This is a substantive decision with meaningful consequence for a significant segment of the iX3's target buyer.
+
+### Analytical implication
+
+BMW's most searched model in Portugal has a longer configurator (14 vs 12 steps), a higher price point at first exposure (€64,500), no online reservation path, and a redundant first step. Taken individually, each is a manageable friction point. Taken together, against the re-engagement finding from Query D — 6.3x conversion lift by the 6th session — the gap becomes a measurable revenue constraint.
+
+The Query D data shows that high-value buyers return multiple times before converting. The iX3 has no mechanism to capture that return: no reserve path, and the configuration save still requires a BMW ID login wall. BMW cannot capture the high-intent return visitor behaviour that the data shows is most valuable, specifically for the model where that behaviour is most likely to occur.
+
+**This is the highest-priority gap identified in this audit.**
+
+---
+
 *See [kpi-framework.md](kpi-framework.md) for the KPI definitions fed by this funnel.*  
 *See [event-taxonomy.md](event-taxonomy.md) for the GA4 event specification at each stage.*  
 *See [sql/A-multi-session-path.sql](../sql/A-multi-session-path.sql) for the technique to measure multi-session journey length.*
