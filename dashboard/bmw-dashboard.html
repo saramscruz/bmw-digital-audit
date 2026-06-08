@@ -236,6 +236,15 @@
     color: var(--bmw-text-dim);
   }
 
+  .section-subtitle {
+    font-family: var(--font-cond);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    color: var(--bmw-text-dim);
+    margin-top: 6px;
+    font-weight: 300;
+  }
+
   /* CHART */
   .chart-annotation {
     margin-top: 24px;
@@ -544,6 +553,39 @@
     <p class="alert-label">Priority recommendation</p>
     <p class="alert-title">What changes with real BMW GA4 access</p>
     <p class="alert-body">Every position above is directionally valid but inferred from proxy data and public signals. With access to BMW's analytics backend: the exact configurator step where mobile exits on paid traffic, the actual session count for iX3 configurator users, the true re-engagement window for configurator abandoners, and BEV vs ICE completion rates by model. <strong>BMW is already collecting this data. Running these queries takes hours.</strong></p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-header">
+    <div>
+      <h2 class="section-title">Three testable product hypotheses</h2>
+      <p class="section-subtitle">Sprint-sized decisions, falsifiable success metrics</p>
+    </div>
+    <span class="section-number">Product decisions</span>
+  </div>
+  <div class="findings">
+    <div class="finding">
+      <span class="finding-num">H01</span>
+      <div>
+        <p class="finding-title">Reduce the lead form from 7 to 4 mandatory fields</p>
+        <p class="finding-body">The "Pedido de Proposta" form requires 7 mandatory fields before submission. Industry research consistently shows conversion drops with each field beyond 3–4. <strong>Proposed change:</strong> make Concessionário optional (dealer selection can happen post-submission) and remove the Particular/Empresa selector from the mandatory path. <strong>Success metric:</strong> lead submissions per configurator completion, segmented by device — measured on mobile CPC traffic specifically, where the 4.28% vs 5.06% desktop gap is most acute. <strong>Cost:</strong> one sprint. No configurator changes required.</p>
+      </div>
+    </div>
+    <div class="finding">
+      <span class="finding-num">H02</span>
+      <div>
+        <p class="finding-title">Add a "Save and continue later" prompt at Step 6 of the iX3 configurator</p>
+        <p class="finding-body">Conversion grows <strong>6.3× from first to sixth session.</strong> The save mechanism is currently gated behind a BMW ID login wall at Step 14 — after most users who will eventually convert have already abandoned. <strong>Proposed change:</strong> surface a lightweight save prompt at Step 6 (after engine, version, paint, wheels, interior, trim), requiring only an email address. Re-engage at 48 hours and 5 days if the configuration is not completed. <strong>Success metric:</strong> return visit rate for users who save at Step 6 vs those who reach Step 6 without saving. Secondary: lead submission rate for save-feature return visitors. <strong>Cost:</strong> one sprint for the prompt UI; email automation via existing CRM.</p>
+      </div>
+    </div>
+    <div class="finding">
+      <span class="finding-num">H03</span>
+      <div>
+        <p class="finding-title">Build a dedicated mobile landing page for iX3 paid search traffic</p>
+        <p class="finding-body">Mobile CPC converts at <strong>4.28% vs desktop 5.06%</strong> — a gap that does not exist on referral traffic (mobile referral outperforms desktop at 7.53% vs 7.01%). The iX3 configurator is functionally identical on both devices. The friction is upstream, in the paid landing experience before the configurator is reached. <strong>Proposed change:</strong> dedicated mobile landing page loading the iX3 configurator directly at Step 1, displaying both variant options (iX3 40 from €64,500 / iX3 50 xDrive from €72,900) with range and price as the primary decision frame, and surfacing the lead CTA without requiring configurator completion. <strong>Success metric:</strong> CPC conversion rate on mobile. Baseline: 4.28%. Target: parity with desktop CPC (5.06%) within 60 days. <strong>Cost:</strong> one sprint. No configurator or campaign changes required.</p>
+      </div>
+    </div>
   </div>
 </section>
 
