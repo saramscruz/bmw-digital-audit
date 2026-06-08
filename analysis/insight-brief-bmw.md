@@ -28,6 +28,8 @@ These patterns align with what BMW's own public data shows. Buyers average 14+ h
 
 **Target mobile paid traffic, not mobile broadly.** Mobile referral already outperforms desktop. The gap is concentrated on CPC: 0.78 percentage points. Treating "mobile" as a single problem produces fixes in the wrong places. The paid mobile landing experience — not the configurator, not the model page — is where the gap lives.
 
+**The iX3 Gap — BMW's highest-demand model has the weakest conversion path.** BMW's most searched model in Portugal right now is the iX3 (+1,050% web search, BREAKOUT on YouTube, June 2026). Yet the iX3 configurator has no Reserve CTA — the highest-intent digital conversion action available on the i4 is absent entirely. The only conversion paths are Pedido de Proposta and Test Drive, both dealer-mediated. The iX3 also has 14 configuration steps versus the i4's 12, a higher entry price (€64,500 vs €57,950), and an €8,400 decision at Step 1 between two variants. Combined with the Query D finding — conversion rate grows 6.3× from first to sixth session — the absence of a save or reserve mechanism means BMW cannot capture return visitor behaviour for its highest-demand product. This is the highest-priority gap identified in this audit. It requires no SQL to confirm and no GA4 access to fix.
+
 ---
 
 ## What We'd Test
