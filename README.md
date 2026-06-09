@@ -42,6 +42,8 @@ It is **not** an analysis of BMW's internal analytics. No one outside BMW has ac
 
 Full citations with URLs: [data-sources.md](data-sources.md)
 
+Framework repository: https://github.com/saramscruz/automotive-digital-audit-framework
+
 ---
 
 ## Project Structure
