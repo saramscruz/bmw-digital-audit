@@ -383,6 +383,47 @@
 
   .footer-link:hover { color: var(--bmw-blue-light); }
 
+  /* DATA SHOWS BLOCK */
+  .data-shows {
+    margin-top: 20px;
+    padding: 20px 24px;
+    border-left: 2px solid rgba(28,105,212,0.25);
+    background: rgba(255,255,255,0.02);
+  }
+
+  .data-shows-label {
+    font-family: var(--font-cond);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--bmw-blue);
+    margin-bottom: 16px;
+  }
+
+  .data-shows-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--bmw-border);
+  }
+
+  .data-shows-item:last-child { border-bottom: none; }
+
+  .data-shows-title {
+    font-family: var(--font-cond);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: var(--bmw-black);
+    letter-spacing: 0.02em;
+  }
+
+  .data-shows-body {
+    font-size: 12px;
+    color: var(--bmw-text-mid);
+    line-height: 1.75;
+  }
+
+  .data-shows-body strong { color: var(--bmw-black); font-weight: 500; }
+
   @media (max-width: 900px) {
     header, .hero, .section, .notice { padding-left: 24px; padding-right: 24px; }
     .kpi-strip { grid-template-columns: 1fr 1fr; }
@@ -415,7 +456,7 @@
 
 <section class="hero">
   <p class="hero-label">Automotive Web Analytics · BMW.pt</p>
-  <h1>Where the digital funnel<br><em>loses its buyers</em></h1>
+  <h1>The iX3 is breaking out.<br><em>BMW's funnel wasn't built for it.</em></h1>
   <div class="hero-meta">
     <div class="meta-item">
       <span class="meta-label">Market</span>
@@ -506,33 +547,27 @@
     <div class="finding">
       <span class="finding-num">01</span>
       <div>
-        <p class="finding-title">One transition drives most of the loss</p>
-        <p class="finding-body">An 80.3% drop between product view and the next step accounts for more funnel loss than all other stages combined. For BMW, this maps to model page to configurator entry. Optimising this single transition produces more incremental leads than any downstream improvement.</p>
+        <p class="finding-title">BMW's highest-demand model has no online purchase path</p>
+        <p class="finding-body">The iX3 is <strong>+1,050%</strong> in Portuguese web search and BREAKOUT on YouTube. The i4 offers Reserve — a 4-step online checkout. <strong>The iX3 does not.</strong> The only conversion paths for BMW's most searched model are dealer-mediated, with 14 configuration steps, a €64,500 entry price, and an €8,400 decision at Step 1. This is a strategic sequencing decision confirmed in BMW Group's 2024 Annual Report: MINI brand direct sales launched across ten European markets in 2024; BMW brand direct sales in Europe is planned but not yet live. The digital funnel needs to be ready when it does.</p>
+        <div class="data-shows">
+          <p class="data-shows-label">What the data shows</p>
+          <div class="data-shows-item">
+            <p class="data-shows-title">One transition drives most of the loss</p>
+            <p class="data-shows-body">An 80.3% drop between product view and the next step accounts for more funnel loss than all other stages combined. For BMW, this maps to model page to configurator entry. Optimising this single transition produces more incremental leads than any downstream improvement.</p>
+          </div>
+          <div class="data-shows-item">
+            <p class="data-shows-title">Re-engagement windows are too short</p>
+            <p class="data-shows-body">Converters take a median of <strong>3 sessions and 129 hours</strong> from first visit to purchase. A standard 24-hour retargeting window discards the majority of eventual buyers. This is a campaign settings change — not a creative problem — and costs nothing to test.</p>
+          </div>
+          <div class="data-shows-item">
+            <p class="data-shows-title">Fix CPC mobile landing pages, not mobile broadly</p>
+            <p class="data-shows-body">Mobile referral already outperforms desktop. The CPC gap is where the problem lives. The configurator performs identically on mobile (observed June 2026). The friction is upstream, in the paid landing experience before the configurator is reached.</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="finding">
       <span class="finding-num">02</span>
-      <div>
-        <p class="finding-title">Re-engagement windows are too short</p>
-        <p class="finding-body">Converters take a median of <strong>3 sessions and 129 hours</strong> from first visit to purchase. A standard 24-hour retargeting window discards the majority of eventual buyers. This is a campaign settings change — not a creative problem — and costs nothing to test.</p>
-      </div>
-    </div>
-    <div class="finding">
-      <span class="finding-num">03</span>
-      <div>
-        <p class="finding-title">Fix CPC mobile landing pages, not mobile broadly</p>
-        <p class="finding-body">Mobile referral already outperforms desktop. The CPC gap is where the problem lives. The configurator performs identically on mobile (observed June 2026). The friction is upstream, in the paid landing experience before the configurator is reached.</p>
-      </div>
-    </div>
-    <div class="finding">
-      <span class="finding-num">04</span>
-      <div>
-        <p class="finding-title">BMW's highest-demand model has no online purchase path</p>
-        <p class="finding-body">The iX3 is <strong>+1,050%</strong> in Portuguese web search and BREAKOUT on YouTube. The i4 offers Reserve — a 4-step online checkout. <strong>The iX3 does not.</strong> The only conversion paths for BMW's most searched model are dealer-mediated, with 14 configuration steps, a €64,500 entry price, and an €8,400 decision at Step 1. This is a strategic sequencing decision confirmed in BMW Group's 2024 Annual Report: MINI brand direct sales launched across ten European markets in 2024; BMW brand direct sales in Europe is planned but not yet live. The digital funnel needs to be ready when it does.</p>
-      </div>
-    </div>
-    <div class="finding">
-      <span class="finding-num">05</span>
       <div>
         <p class="finding-title">BMW leads search interest — but Mercedes is capturing used car demand</p>
         <p class="finding-body">BMW averages 83 vs Mercedes 76 in Portuguese web search (Google Trends, past year). But Mercedes's rising queries include <strong>"mercedes usados certificados" (+110%).</strong> BMW's rising queries are entirely new-car focused. Mercedes is capturing demand at two funnel points; BMW at one.</p>
@@ -556,22 +591,22 @@
     <div class="finding">
       <span class="finding-num">H1</span>
       <div>
-        <p class="finding-title">Reduce the lead form from 7 to 4 mandatory fields</p>
-        <p class="finding-body">The "Pedido de Proposta" form requires 7 mandatory fields before submission. Industry research consistently shows conversion drops beyond 3–4 fields. <strong>Proposed change:</strong> make Concessionário optional and remove the Particular/Empresa selector from the mandatory path. <strong>Success metric:</strong> lead submissions per configurator completion, segmented by mobile CPC traffic specifically — where the conversion gap is largest. <strong>Cost: one sprint. No configurator changes required.</strong></p>
+        <p class="finding-title">Measure iX3 configurator entry rate vs i4</p>
+        <p class="finding-body">The iX3 is +1,050% in Portuguese web search. The open question is whether that demand is entering the 14-step configurator or dissipating on the model page. Segment configurator_start rate by model, isolating iX3 vs i4. If iX3 entry rate is lower than i4 despite higher search interest, the model page CTA — not the configurator — is the fix. <strong>Success metric:</strong> configurator entry rate for iX3 vs i4, by device and channel. <strong>Cost: one BigQuery query against BMW's GA4 export.</strong></p>
       </div>
     </div>
     <div class="finding">
       <span class="finding-num">H2</span>
       <div>
-        <p class="finding-title">Add a save prompt at Step 6 of the iX3 configurator</p>
-        <p class="finding-body">Conversion grows 6.3× from first to sixth session. The save mechanism is currently gated behind a BMW ID login wall at Step 14 — after most users have already abandoned. <strong>Proposed change:</strong> surface a lightweight "Save and continue later" prompt at Step 6, requiring only an email address. Re-engage at 48 hours and 5 days. <strong>Success metric:</strong> return visit rate for users who save at Step 6 vs those who don't. Secondary: lead submission rate for save-feature return visitors. <strong>Cost: one sprint for the prompt UI; email automation via existing CRM.</strong></p>
+        <p class="finding-title">An online reservation on the iX3 will capture intent that currently expires at dealer hours</p>
+        <p class="finding-body">The i4 has a 4-step Reserve flow. The iX3 does not. Converters take a median of <strong>3 sessions and 129 hours</strong> to purchase — most of that time falls outside dealer hours. Add the same Reserve CTA to the iX3 configurator summary screen. <strong>Success metric:</strong> lead submission rate for iX3 vs i4 within 14 days of configurator completion. Secondary: reservation conversion rate by time of day. <strong>Cost: one sprint to extend the existing Reserve flow to the iX3.</strong></p>
       </div>
     </div>
     <div class="finding">
       <span class="finding-num">H3</span>
       <div>
-        <p class="finding-title">Build a dedicated mobile landing page for iX3 paid search traffic</p>
-        <p class="finding-body">Mobile CPC converts at 4.28% vs desktop 5.06%. Mobile referral outperforms desktop (7.53% vs 7.01%). The configurator is functionally identical on both devices — the friction is upstream, in the paid landing experience. <strong>Proposed change:</strong> dedicated mobile landing page loading the iX3 configurator directly at Step 1, with the two variants and price as the primary decision frame. <strong>Success metric:</strong> CPC conversion rate on mobile. Baseline 4.28%. Target: parity with desktop CPC (5.06%) within 60 days. <strong>Cost: one sprint. No configurator or campaign changes required.</strong></p>
+        <p class="finding-title">A dedicated mobile landing page for iX3 CPC traffic will close the paid mobile gap</p>
+        <p class="finding-body">Mobile CPC converts at 4.28% vs desktop 5.06%. iX3 is the highest-demand model in Portugal. A dedicated mobile landing page for iX3 paid search campaigns, loading the configurator directly at Step 1 with the iX3 pre-selected, bypasses the model range page and reduces drop-off before configurator entry. Surface a lead form as an alternative CTA for users not ready to configure. <strong>Success metric:</strong> CPC conversion rate on mobile for iX3. Baseline: 4.28%. Target: parity with desktop CPC (5.06%) within 60 days. <strong>Cost: one sprint. No configurator changes required.</strong></p>
       </div>
     </div>
   </div>
