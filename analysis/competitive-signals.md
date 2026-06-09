@@ -112,4 +112,46 @@ With real GA4 access, the test is straightforward: segment configurator completi
 
 ---
 
+---
+
+## BMW Group Annual Report 2024 — Additional Verified Findings
+
+**Source:** BMW Group Annual Report 2024; BMW AG Financial Statements 2024. Confidence: High — audited documents.
+
+### 1. Direct Sales Sequencing: MINI First, BMW Brand Later
+
+BMW Group's European direct sales rollout is deliberately staged. MINI direct sales launched in 10 European markets in 2024 (Italy, Poland, Sweden, Finland, Norway, France, Austria, Belgium, Luxembourg, Germany), with five additional markets following in March 2025. BMW brand direct sales in Europe has **not yet launched** as of the 2024 Annual Report (p. 48) — the rollout is described as "planned for a later date."
+
+**Implication for this project:** The absence of a Reserve CTA on the iX3 configurator in Portugal is not a UX decision in isolation. It reflects BMW Group's deliberate market sequencing: MINI goes first, BMW brand follows. The iX3 configurator gap finding stands, but its root cause is strategic — a phased commercial rollout — not a technical omission or oversight. This changes the recommendation framing: the iX3 gap will close when the BMW brand direct sales programme reaches Portugal, not when someone fixes a button.
+
+### 2. New Organisational Unit: Customer Channels, Digital Commerce, Connected Company
+
+BMW Group established a new internal unit in 2024 as part of the CBS Strategy, Sales Management and Digitalisation department: **"Customer Channels, Digital Commerce, Connected Company."** This unit is the organisational home for exactly the digital funnel work this project analyses — configurator journeys, online ordering capability, direct-to-consumer channels.
+
+**Why this matters:** Structural changes of this kind typically precede increased investment and executive accountability in the domain. The creation of a dedicated unit signals that digital commerce has been elevated to a distinct function, separate from traditional sales management. This is consistent with the direct sales sequencing above and suggests the BMW brand rollout is actively being built out internally.
+
+### 3. Connected Customer Rate as a Board KPI
+
+"Connected customer rate" is an official Board of Management non-financial KPI, classified under Innovation Performance. This confirms that BMW tracks digital engagement at the highest governance level — it is not a marketing metric managed below the Board.
+
+**Implication:** Any analysis that quantifies the digital engagement gap (configurator drop-off, mobile conversion shortfall, lead-to-dealer conversion) is speaking the language of BMW's own Board-level performance framework. The business case for this project's recommendations aligns with metrics the Board already monitors.
+
+### 4. Financial Context: Revenue, R&D, and BEV
+
+| Metric | 2024 | 2023 | Change | Confidence |
+|--------|------|------|--------|------------|
+| BMW AG revenues | €105,317M | €107,874M | −€2,557M | High |
+| Europe revenue | — | — | +€1,056M | High |
+| R&D expenses | €8,315M | €6,924M | +€1,391M | High |
+| BEV deliveries | 426,594 | 375,685 | +13.5% YoY | High |
+| BEV share of total deliveries | 17.4% | — | Highest in company history | High |
+
+**Interpretation:** BMW AG revenues declined overall in 2024, but European revenue grew. Simultaneously, R&D investment increased by €1.4 billion — a material commitment in a year of revenue compression. This signals that BMW is investing forward, not contracting. The BEV growth figures (426,594 deliveries, +13.5%) reinforce the digital-funnel argument: BMW's fastest-growing segment is also its most research-intensive buyer cohort.
+
+### 5. Charging Infrastructure: 670,000+ Points Across Europe
+
+BMW's charging network gives card holders access to over 670,000 charging points across Europe via the BMW Charging card. This is directly relevant to the iX3 demand argument: EV range anxiety and infrastructure concerns are a documented barrier to BEV adoption. BMW's charging network scale materially reduces this barrier, supporting the view that iX3 demand will continue to grow as infrastructure confidence increases.
+
+---
+
 *All traffic estimates are from SimilarWeb and Semrush free-tier tools. All BMW financial data is from BMW Group Annual Report 2024. Full citations in [data-sources.md](../data-sources.md).*
